@@ -22,8 +22,8 @@ Once you have a configuration file set up, run `npm start` and an express app wi
 1. Start the Express server by running: `npm start`.  It should be available at `localhost:4200/cognito/token`.
 2. Pipe the token to a cURL command for authorization:
 ```bash
-# Insert token using xargs into authorization header
-curl localhost:4200/cognito/token | xargs -0 -I token curl -H 'Authorization: Bearer token' https://my.authorized.api/rest/protected/route
+# Insert token into authorization header after execution
+curl -H "Authorization: Bearer $(curl localhost:4200/cognito/token)" https://my.authorized.api/rest/protected/route
 ```
 
 ## Configuration
