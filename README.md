@@ -36,7 +36,8 @@ The example configuration looks like:
     "clientId": "<client ID>",
     "region": "<region>",
     "username": "username",
-    "password": "password"
+    "password": "password",
+    "port": 4200
 }
 ```
 
@@ -45,6 +46,7 @@ The example configuration looks like:
 * `region`: The region of the AWS account where the pool is located.
 * `username`: The username of a registered user in the pool.
 * `password`: The password of a registered user in the pool.
+* `port (Optional)`: The port the server runs on - default 4200.
 
 ## Copyright
 MIT (c) 2018 Matt Johnson - Cedrus, LLC.
