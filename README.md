@@ -17,6 +17,15 @@ Using these APIs will require some knowledge of OAUTH2 and authorization flows s
 
 Once you have a configuration file set up, run `npm start` and an express app will run on `localhost:4200` exposing a `GET: /cognito/token` route.  The response will be an access token as text.
 
+## Example
+
+1. Start the Express server by running: `npm start`.  It should be available at `localhost:4200/cognito/token`.
+2. Pipe the token to a cURL command for authorization:
+```bash
+# Insert token using xargs into authorization header
+curl localhost:4200/cognito/token | xargs -0 -I token curl -H 'Authorization: Bearer token' https://my.authorized.api/rest/protected/route
+```
+
 ## Configuration
 
 The example configuration looks like:

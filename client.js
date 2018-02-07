@@ -46,6 +46,7 @@ fs.readFile(path.join(__dirname, 'config.json'), (err, data) => {
         next();
     }, passport.authorize('cognito-api-client'), (req, res) => {
         // Return results from Cognito Authorization
+        console.info(`Success!  Returned token: ${JSON.stringify(req.account, null, '\t')}`);
         res.status(200).send(req.account.accessToken);
     });
 
