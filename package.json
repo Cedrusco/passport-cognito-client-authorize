@@ -17,6 +17,10 @@
     "api",
     "endpoints"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/src-system42/passport-cognito-client-authorize.git"
+  },
   "author": "Matt Johnson, Cedrus LLC (mj@cedrus.digital)",
   "license": "MIT",
   "dependencies": {
