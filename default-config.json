@@ -1,0 +1,7 @@
+{
+    "poolId": "<pool ID>",
+    "clientId": "<client ID>",
+    "region": "<region>",
+    "username": "username",
+    "password": "password"
+}

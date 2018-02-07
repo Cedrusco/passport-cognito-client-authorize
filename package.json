@@ -1,0 +1,29 @@
+{
+  "name": "passport-cognito-client-authorize",
+  "version": "1.0.0",
+  "description": "Testing endpoint for returning an access token from AWS Cognito.",
+  "main": "client.js",
+  "engines": {
+    "node": ">= 6.9.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "start": "node client.js"
+  },
+  "keywords": [
+    "cognito",
+    "aws",
+    "security",
+    "api",
+    "endpoints"
+  ],
+  "author": "Matt Johnson, Cedrus LLC (mj@cedrus.digital)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "json-stringify-safe": "^5.0.1",
+    "passport": "^0.4.0",
+    "passport-cognito": "^0.1.10"
+  }
+}
